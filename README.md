@@ -3,13 +3,26 @@
 
 ![](images/data.png?raw=true)
 
-Рассматривается модель в которой функция тяготения имеет вид $e^{-\alpha\cdot dist^{\beta}\cdot time^{\gamma}}$. В данной модели три параметра — степени $\beta,\gamma$, которые мы перебираем по сетке, и $\alpha$ который подбирается наилучшим образом (делением отрезка). В качестве основной функции потерь используется $MSE$ исходной и восстановленной матрицы корреспонденции. 
+Рассматривается модель в которой функция тяготения имеет вид ![f1.1]. В данной модели три параметра — степени ![f1.2], которые мы перебираем по сетке, и ![f1.3] который подбирается наилучшим образом (делением отрезка). В качестве основной функции потерь используется ![f1.4] исходной и восстановленной матрицы корреспонденции. 
+
+[f1.1]: http://chart.apis.google.com/chart?cht=tx&chl=e^{-\\alpha\cdot{}dist^{\\beta}\\cdot{}time^{\\gamma}}
+[f1.2]: http://chart.apis.google.com/chart?cht=tx&chl=\beta,\gamma
+[f1.3]: http://chart.apis.google.com/chart?cht=tx&chl=\alpha
+[f1.4]: http://chart.apis.google.com/chart?cht=tx&chl=MSE
 
 Результаты для данной модели представлены ниже:
 
 ![](images/3_param_results.png?raw=true)
 
-При этом наилучшие результаты для трехпараметрической модели достигаются при $\beta=0.2,\gamma=0.1$ и $\alpha=2.364$, при этом $MSE=4.551$. Если зафиксировать степени $\beta=1$ и $\gamma=0$ то лучший результат достигается при $\alpha=0.167$ и $MSE=11.038$, что заметно хуже.
+При этом наилучшие результаты для трехпараметрической модели достигаются при ![f2.1] и ![f2.2], при этом ![f2.3]. Если зафиксировать степени ![f2.4] и ![f2.5] то лучший результат достигается при ![f2.6] и ![f2.7], что заметно хуже.
+
+[f2.1]: http://chart.apis.google.com/chart?cht=tx&chl=\beta=0.2,\gamma=0.1
+[f2.2]: http://chart.apis.google.com/chart?cht=tx&chl=\alpha=2.364
+[f2.3]: http://chart.apis.google.com/chart?cht=tx&chl=MSE=4.551
+[f2.4]: http://chart.apis.google.com/chart?cht=tx&chl=\beta=1
+[f2.5]: http://chart.apis.google.com/chart?cht=tx&chl=\gamma=0
+[f2.6]: http://chart.apis.google.com/chart?cht=tx&chl=\alpha=0.167
+[f2.7]: http://chart.apis.google.com/chart?cht=tx&chl=MSE=11.038
 
 Графики сходимости выглядят следующим образом (просто несколько примеров, при этом синяя линия показывает результаты с лучшими параметрами)
 
